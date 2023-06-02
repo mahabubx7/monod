@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build && cp -r dist/* ../nest/dist/client/admin",
     "preview": "vite preview"
   },
   "dependencies": {
