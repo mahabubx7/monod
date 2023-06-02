@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "apps/nest/dist/main.js",
+      "src": "apps/nest/dist/main.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "apps/nest/dist/main.js",
+      "dest": "apps/nest/src/main.ts",
       "methods": [
         "GET",
         "POST",
