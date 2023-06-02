@@ -6,7 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build && cd dist && mkdir client && cd client && mkdir web && mkdir admin",
+    "prebuild": "pnpm nest build",
+    "build": "pnpm run prebuild && cd dist && mkdir client && cd client && mkdir web && mkdir admin",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "dev": "nest start --watch",
